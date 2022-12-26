@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+        #top-line {
+            background-color: black;
+            position: fixed;
+            height: 4px;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        #right-line {
+            background-color: black;
+            position: fixed;
+            width: 4px;
+            height: 100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+        div.left-menu-bar {
+            background-color: rgb(216, 213, 213);
+            position: fixed;
+            left: 0;
+            top: 4px;
+            width: 3%;
+            bottom: 80px;
+            text-align: center;
+        }
+        span.left-menu-icon {
+            display: block;
+            margin-top: 40px;
+            margin-bottom: 56px;
+            z-index: 1;
+        }
+        div.upper-card {
+            position: fixed;
+            left: 3%;
+            top: 4px;
+            right: 4px;
+            height: 265px;
+            background-color: rgb(58, 58, 58);
+            z-index: 1;
+        }
+        img.album-art-upper-card {
+            height: 200px;
+            margin-top: 28px;
+            margin-left: 30px;
+        }
+        div.middle-songs-list {
+            position: absolute;
+            left: 3.6%;
+            top: 280px;
+            right: 4px;
+            z-index: 0;
+        }
+        div.middle-songs-list table tr td{
+            width: 25%;
+            padding: 15px ;
+        }
+        div.middle-songs-list table tr:nth-child(even) {
+            background-color: rgb(232, 232, 232);
+            border-spacing: 0;
+            border: 0;
+            
+        }
+        div.middle-songs-list table tr > td {
+            border-spacing: 0;
+            border: 0;
+        }
+        div.middle-songs-list table tr > td:last-child {
+            color: blue;
+            font-weight: 600;
+        }
+        div.bottom-player {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            right: 4px;
+            background-color: rgb(48, 81, 142);
+            height: 100px;
+        }
+        img.album-art-player {
+            width: 80px;
+            margin: 10px;
+        }
+        div.bottom-player-annot {
+            display: inline-block;
+            position: absolute;
+            color: white;
+            top: 26px;
+            left: 100px;
+            font-size: x-small;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+        div.bottom-player-controls {
+            display: inline-block;
+            position: absolute;
+            color: white;
+            top: 26px;
+            right: 10px;
+        }
+        div.bottom-player-controls span {
+            position: relative;
+            top: 15px;
+            margin-left: 155px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top and Right side black lines -->
+    <div id="top-line"></div>
+    <div id="right-line"></div>
+    
+    <!-- Left menu bar div -->
+    <div class="left-menu-bar">
+        <span class="left-menu-icon"><a style="color: black;" href="#"><i class="las la-bars"></i></a></span>
+        <span class="left-menu-icon"><a style="color: black;" href="#"><i class="las la-home"></i></a></span>
+        <span class="left-menu-icon"><a style="color: black;" href="#"><i class="las la-search"></i></a></span>
+        <span class="left-menu-icon"><a style="color: black;" href="#"><i class="las la-volume-up"></i></a></span>
+        <span class="left-menu-icon"><a style="color: black;" href="#"><i class="las la-user"></i></a></span>
+        <span class="left-menu-icon"><a style="color: black;" href="#"><i class="las la-cog"></i></a></span>
+        <span class="left-menu-icon"><a style="color: black;" href="#"><i class="lab la-spotify"></i></a></span>
+        <span class="left-menu-icon"><a style="color: black;" href="#"><i class="lab la-soundcloud"></i></a></span>
+    </div>
+
+    <!-- Upper card div -->
+    <div class="upper-card">
+        <table>
+            <tr>
+                <td style="padding: 0;"><img class="album-art-upper-card" src="https://uploads.codesandbox.io/uploads/user/a8233562-b36b-483d-9de9-5a1ac148fb0c/2Eq--cattyboard.jpg" alt="noimagefound"></td>
+                <td width="auto">
+                <div style="position: absolute; color: white; top: 10px; left: 280px;">
+                    <h2 style="font-weight: lighter; margin-bottom: 10px;">CattyBoard Top 100 Single Charts (11.06.36)</h2>
+                    <span style="display: block; font-weight: lighter; font-size: small;">Unknown Artist</span>
+                    <span style="display:block; font-weight: lighter; font-size: small;">2016 . Charts . 100 songs</span>
+                    <div style="position: absolute; margin-top: 115px; font-size: x-small; font-weight: lighter; letter-spacing: 1px;">
+                    <span style="margin-right: 20px;"><i class="las la-play"></i>&nbspPlay all</span>
+                    <span style="margin-right: 20px;"><i class="las la-plus"></i>&nbspAdd to</span>
+                    <span><i class="las la-ellipsis-h"></i>&nbspMore</span>
+                    </div>   
+                </div>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <!-- Middle songs list div -->
+    <div class="middle-songs-list">
+        <table style="font-size: 13px; width:100%;">
+            <tr>
+                <td>1. One Dance</td>
+                <td>Crake feat CatKid & Cyla</td>
+                <td>2:54</td>
+                <td><span style="padding: 2px; margin: 0; border: solid 2px; border-color: black; ">CATTY CLOUD SYNC</span></td>
+            </tr>
+            <tr>
+                <td>2. Panda</td>
+                <td>Cattee</td>
+                <td>4:06</td>
+                <td><span style="padding: 2px; margin: 0; border: solid 2px; border-color: black; ">CATTY CLOUD SYNC</span></td>
+            </tr>
+            <tr>
+                <td>3. Can't Stop the Feeling!</td>
+                <td>Catin Cimberlake</td>
+                <td>3:56</td>
+                <td><span style="padding: 2px; margin: 0; border: solid 2px; border-color: black; ">CATTY CLOUD SYNC</span></td>
+            </tr>
+            <tr>
+                <td>4. Work From Home</td>
+                <td>Cat Harmony feat Colla</td>
+                <td>3:34</td>
+                <td><span style="padding: 2px; margin: 0; border: solid 2px; border-color: black; ">CATTY CLOUD SYNC</span></td>
+            </tr>
+        </table>
+    </div>
+    
+    <!-- Bottom player div -->
+    <div class="bottom-player">
+        <table>
+            <tr>
+                <td>
+                    <img class="album-art-player" src="https://uploads.codesandbox.io/uploads/user/a8233562-b36b-483d-9de9-5a1ac148fb0c/2Eq--cattyboard.jpg" alt="noimagefound">
+                </td>
+                <td style="display: block; padding-right: 100px;">
+                    <div class="bottom-player-annot">
+                        <span style="display: block;">If It Ain't Love</span>
+                        <span style="display: block; margin-top: 17px;">Catson Derulo</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="bottom-player-controls">
+                        <span><i class="las la-step-backward"></i></span>
+                        <span><i class="las la-pause"></i></span>
+                        <span><i class="las la-step-forward"></i></span>
+                        <span><i class="las la-undo-alt"></i></span>
+                        <span><i class="las la-random"></i></span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
