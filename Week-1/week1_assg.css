@@ -1,0 +1,108 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+#top-line {
+    background-color: black;
+    position: fixed;
+    height: 4px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#right-line {
+    background-color: black;
+    position: fixed;
+    width: 4px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.left-menu-bar {
+    background-color: rgb(216, 213, 213);
+    position: fixed;
+    left: 0;
+    top: 4px;
+    width: 3%;
+    bottom: 80px;
+    text-align: center;
+}
+.left-menu-icon {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 56px;
+    z-index: 1;
+}
+.upper-card {
+    position: fixed;
+    left: 3%;
+    top: 4px;
+    right: 4px;
+    height: 265px;
+    background-color: rgb(58, 58, 58);
+    z-index: 1;
+}
+.album-art-upper-card {
+    height: 200px;
+    margin-top: 28px;
+    margin-left: 30px;
+}
+.middle-songs-list {
+    position: absolute;
+    left: 3.6%;
+    top: 280px;
+    right: 4px;
+    z-index: 0;
+}
+.middle-songs-list table tr td{
+    width: 25%;
+    padding: 15px ;
+}
+.middle-songs-list table tr:nth-child(even) {
+    background-color: rgb(232, 232, 232);
+    border-spacing: 0;
+    border: 0;
+    
+}
+.middle-songs-list table tr > td {
+    border-spacing: 0;
+    border: 0;
+}
+.middle-songs-list table tr > td:last-child {
+    color: blue;
+    font-weight: 600;
+}
+.bottom-player {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 4px;
+    background-color: rgb(48, 81, 142);
+    height: 100px;
+}
+.album-art-player {
+    width: 80px;
+    margin: 10px;
+}
+.bottom-player-annot {
+    display: inline-block;
+    position: absolute;
+    color: white;
+    top: 26px;
+    left: 100px;
+    font-size: x-small;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+.bottom-player-controls {
+    display: inline-block;
+    position: absolute;
+    color: white;
+    top: 26px;
+    right: 10px;
+}
+.bottom-player-controls span {
+    position: relative;
+    top: 15px;
+    margin-left: 155px;
+}
